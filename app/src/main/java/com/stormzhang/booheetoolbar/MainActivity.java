@@ -16,17 +16,6 @@ public class MainActivity extends BaseActivity {
         getSupportActionBar().setTitle("薄荷");
         getSupportActionBar().setDisplayHomeAsUpEnabled(false);
         // TODO: your setting
-
-        Log.e("TAG", getStatusBarHeight() + "");
-    }
-
-    public int getStatusBarHeight() {
-        int result = 0;
-        int resourceId = getResources().getIdentifier("status_bar_height", "dimen", "android");
-        if (resourceId > 0) {
-            result = getResources().getDimensionPixelSize(resourceId);
-        }
-        return result;
     }
 
     @Override
